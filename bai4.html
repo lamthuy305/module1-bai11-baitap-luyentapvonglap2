@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng cửu chương</title>
+</head>
+<body>
+<script>
+    let bang;
+    bang = "<table width='350' >"
+    for (let i = 1; i <= 10; i++) {
+        bang += "<tr>";
+        if (i === 1 || i === 10) {
+            for (let j = 2; j <= 16; j++) {
+                bang += "<td>*</td>";
+            }
+            bang += "</tr>";
+        } else {
+            bang+="<td>*</td>";
+            for (let j = 2; j <= 14; j++) {
+                bang += "<td></td>";
+            }
+            bang+="<td>*</td>";
+        }
+        bang += "</tr>";
+    }
+    bang = bang + "</table>";
+    document.write(bang);
+</script>
+</body>
+</html>

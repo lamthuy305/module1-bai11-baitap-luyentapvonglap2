@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In hình tam giác vuông</title>
+</head>
+<body>
+<script>
+
+     let text1 = "";
+
+     for (let i = 5 ; i > 0 ; i--) {
+         let j = i;
+         for ( j ; j < 6 ; j++) {
+             text1 += "* ";
+         }
+         text1 += "<br>";
+     }
+
+     document.write(text1);
+
+
+     let text2 = "";
+
+     for (let i = 5 ; i > 0 ; i--) {
+         let j = i;
+         for ( j ; j > 0 ; j--) {
+             text2 += "* ";
+         }
+         text2 += "<br>";
+     }
+
+     document.write(text2);
+
+        let text4 = "<p style=\"position:absolute ; right: 1100px\">";
+
+    for (let i = 5 ; i > 0 ; i--) {
+        let j = i;
+        for ( j ; j < 6 ; j++) {
+            text4 += "* ";
+        }
+        text4 += "</p> <br> <p style=\"position:absolute ; right: 1100px\">";
+    }
+
+    document.write(text4);
+
+
+
+    let text3 = "<p style=\"position:absolute ; right: 1100px\">";
+    for (let i = 5 ; i > 0 ; i--) {
+        let j = i;
+        for ( j ; j > 0 ; j--) {
+            text3 += "* ";
+        }
+        text3 += "</p> <br> <p style=\"position:absolute ; right: 1100px\">";
+    }
+    document.write(text3);
+
+</script>
+</body>
+</html>
